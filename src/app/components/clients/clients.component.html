@@ -1,1 +1,22 @@
-<p>clients works!</p>
+    <h1>Hello, welcome to Anna Architectural Client page</h1>
+    <div>
+        <h4>Please register with us</h4>
+                <img src="src/assets/3d-building-svgrepo-com_200x200.svg" alt="Login" width="100px" height="100px">
+    
+            <form [formGroup]="profileForm" (ngSubmit)="onSubmit()">
+                    <label for="first-name" class="form-label">First Name:</label>
+                        <input id="first-name" type="text" formControlName="fistname" required>
+                    <label for="last-name" class="form-label">Last Name:</label>
+                        <input id="last-name" type="text" formControlName="lastname">
+            <div formGroupName="address">
+                <label for="street" class="form-label">Street:</label>
+                    <input id="street" type="text" formControlName="street">
+                <label for="city" class="form-label">City:</label>
+                        <input id="city" type="text" formControlName="city">
+                <label for="state" class="form-label">State:</label>
+                        <input id="state" type="text" formControlName="state">
+                <label for="zip" class="form-label">Zip:</label>
+                        <input id="zip" type="text" formControlName="zip">
+            </div>
+            </form>
+    </div>

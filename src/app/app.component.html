@@ -1,3 +1,19 @@
-<h1>App component Working!</h1>
-
+<nav>
+  <ul>
+    <li><a routerLink="/clients">Clients</a></li>
+    <li><a routerLink="/clientmeetings">Client Meetings</a></li>
+  </ul>
+</nav>
+<div class="rightJustify">
+  <app-home [name]="appName"></app-home>
+  <div class="conainer">
+  </div>
+  </div>
+  <div class="container">
 <router-outlet></router-outlet>
+</div>
+<footer>
+  <div class="container">
+    <div class="container">Anna Architectural Footer</div>
+  </div>
+</footer>
